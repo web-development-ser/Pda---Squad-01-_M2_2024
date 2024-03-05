@@ -1,0 +1,16 @@
+:root {
+    /* Defina sua cor abaixo usando keys: */
+    --key-cor-name: blue;
+    --key-cor-gold: gold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Acesse sua cor usando a váriavel cor */
+    background-color: var(--key-cor-gold);
+}
