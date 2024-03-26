@@ -1,0 +1,1 @@
+/* Aqui ficará a classe */
