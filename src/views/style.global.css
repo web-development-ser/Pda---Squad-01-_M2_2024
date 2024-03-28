@@ -1,1 +1,15 @@
 /* Estilização que vai para todas as paginas */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --corPrincipal: #84B026;
+    --corSecundaria: #3D3D3D;
+    --corTerciaria: #173540;
+    --corBranca: #fff;
+    --corPreta: #000;
+}
