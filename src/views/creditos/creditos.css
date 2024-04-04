@@ -1,1 +1,5 @@
 /* CSS usado no arquivo de creditos */
+
+h1 {
+    color: var(--corPrincipal);
+}

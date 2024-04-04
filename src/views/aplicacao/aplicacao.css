@@ -1,1 +1,41 @@
 /* CSS usado no arquivo de aplicação */
+
+.header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corPrincipal);
+    gap: 20px;
+    color: var(--corBranca);
+}
+
+.input-cidade {
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.input-cidade::placeholder{
+    color: white;
+}
+
+.input-cidade:focus {
+    outline: none;
+}
+
+.input-enviar {
+    height: 30px;
+    padding: 5px 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #6e9221;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}

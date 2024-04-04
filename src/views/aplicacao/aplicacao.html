@@ -6,15 +6,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./aplicacao.css">
     <link rel="stylesheet" href="../style.global.css">
     <title>Aplicação</title>
 </head>
 <body>
-    <h1>Verique se seu ambiente é poluido</h1>
-    <form method="post">
-        <label for="icidade">Cidade:</label>
-        <input id="icidade" type="text">
-    </form>
+    <header class="header">
+        <h1>Pesquise a qualidade do ar da sua cidade</h1>
+        <form method="post">
+            <input class="input-cidade" id="icidade" type="text" placeholder="Sua cidade" required minlength="3">
+            <input class="input-enviar" id="isubmit" type="submit" value="Pesquisar">
+        </form>
+    </header>
+    <main class="main"></main>
 
+
+    <script type="module" src="./aplicacao.js"></script>
 </body>
 </html>
