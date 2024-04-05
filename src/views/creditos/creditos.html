@@ -1,15 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.global.css">
-    <title>Creditos</title>
-</head>
-<body>
-    <h1>Aqui ficará os creditos e agradecimentos</h1>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Créditos</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <header>
+    <div class="logo">
+      <!-- Coloque sua logo aqui -->
+      <img src="images/logo.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <section id="about">
+      <h2>O que é o site?</h2>
+      <p>
+        Este site foi criado para fornecer informações sobre o ambiente do solo,
+        destacando sua importância e os diversos aspectos relacionados a ele.
+      </p>
+    </section>
+
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="images/maeldson.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Maeldson Cavalcante</h2>
+              <p class="description">
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Sergio</h2>
+              <p class="description">
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Edson</h2>
+              <p class="description">
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Kaio</h2>
+              <p class="description">
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+
+              <button class="button">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Ambiente do Solo. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
 </html>
