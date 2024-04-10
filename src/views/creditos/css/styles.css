@@ -45,9 +45,13 @@ nav ul li a {
 
 .logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1000; 
+  top: -69px;
+  left: 40px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
 }
 
 #about {
@@ -178,6 +182,8 @@ nav ul li a {
   background-color: #4070f4;
 }
 
+/* Responsividade dos slides */
+
 @media screen and (max-width: 768px) {
   .slide-content {
     margin: 0 10px;
@@ -187,11 +193,31 @@ nav ul li a {
   }
 }
 
+
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    list-style: none;
+    padding: 25px;
+  }
+
+  .logo {
+    top: -69px;
+    left: -30px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 5px;
+  padding: 5;
   position: fixed;
   bottom: 0;
   width: 100%;
