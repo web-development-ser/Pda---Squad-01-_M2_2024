@@ -1,14 +1,15 @@
-import { addCity } from "../../controllers/cityController.js"
+import { addCity, listCity } from "../../controllers/cityController.js"
 
 const city = document.getElementById('icidade')
 const buttonSubmit = document.getElementById('isubmit')
 const main = document.getElementsByClassName('main')[0]
-const carregando = document.getElementById('carregando');
+const loading = document.getElementById('carregando');
+let arrayCitySearched = []
 
 buttonSubmit.addEventListener('click', async (event) => {
     if(city.value.length>=3 && city.value.trim().length >= 1) {
         event.preventDefault()
-        mostrarCarregando();
+        viewLoading();
         const coordenadas = await searchAPI(city.value)
         if (coordenadas) {
             const informations = await verifyEnvironment(coordenadas.lat, coordenadas.lon);
@@ -18,7 +19,7 @@ buttonSubmit.addEventListener('click', async (event) => {
             }
         }
     }
-    esconderCarregando();
+    hideLoading();
 })
 
 async function searchAPI(nomeCidade) {
@@ -75,22 +76,22 @@ function createCard(cidadePesquisada) {
     const resultado = document.createElement("span")
     if(cidadePesquisada.qualidadeAr <= 50) {
         resultado.innerHTML = "Bom"
-        // boa
+        div.style.backgroundColor = 'green'
     } else if(cidadePesquisada.qualidadeAr <= 50) {
         resultado.innerHTML = "Moderado"
-        // moderada
+        div.style.backgroundColor = 'lightgreen'
     } else if(cidadePesquisada <= 150 ) {
         resultado.innerHTML = "Insalubre"
-        // insalubre
+        div.style.backgroundColor = 'lightyellow'
     } else if(cidadePesquisada.qualidadeAr <= 200) {
         resultado.innerHTML = "Insalubre"
-        // insalubre 
+        div.style.backgroundColor = 'yellow'
     } else if (cidadePesquisada.qualidadeAr <= 300) {
         resultado.innerHTML = "Muito insalubre"
-        // muito insalubre
+        div.style.backgroundColor = 'lightred'
     } else if(cidadePesquisada.qualidadeAr <= 500) {
         resultado.innerHTML = "Perigoso"
-        // perigoso
+        div.style.backgroundColor = 'red'
     }
 
     const divInfo = document.createElement('div')
@@ -117,11 +118,14 @@ function createCard(cidadePesquisada) {
 
 }
 
-function mostrarCarregando() {
+function showCardCity() {
+
+}
+
+function viewLoading() {
     carregando.style.display = 'block';
 }
 
-// Função para esconder o indicador de carregamento
-function esconderCarregando() {
+function hideLoading() {
     carregando.style.display = 'none';
 }

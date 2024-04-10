@@ -1,5 +1,7 @@
-/* CSS usado no arquivo de aplicação */
-
+body {
+    position: relative;
+    min-height: 100vh;
+}
 .header {
     position: relative;
     padding: 40px;
@@ -12,9 +14,9 @@
     color: var(--corBranca);
 }
 
-.logo-img {
-    position: absolute;
-    left: 40px;
+.titulo {
+    font-size: 1.7em;
+    font-weight: 200;
 }
 
 .pesquisa {
@@ -22,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .input-cidade {
     height: 30px;
@@ -63,10 +65,14 @@
 }
 
 .main {
+    flex: 1;
+    height: 100%;
+    background-color: red;
+    padding: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 65vh;
     gap: 20px;
 }
 
@@ -110,6 +116,9 @@
     gap: 3px;
 }
 .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     background: linear-gradient(to left, #567416, #9ccf2e);
