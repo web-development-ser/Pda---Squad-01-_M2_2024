@@ -28,14 +28,14 @@
     height: 30px;
     width: 400px;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid var(--corSecundaria);
     border-radius: 20px;
     background-color: transparent;
-    color: white;
+    color: var(--corSecundaria);
 }
 
 .input-cidade::placeholder{
-    color: white;
+    color: var(--corSecundaria);
 }
 
 .input-cidade:focus {
@@ -47,7 +47,7 @@
     padding: 5px 10px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    background-color: #6e9221;
+    background-color: var(--corSecundaria);
     border: none;
     border-radius: 20px;
     color: white;
@@ -58,6 +58,89 @@
 }
 
 #isubmit:hover {
-    background-color: green;
+    background-color: #313030;
     transition: .3s;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #6e9220;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card-ar {
+    width: 100%;
+    /* background-color: red; */
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.card-data {
+    font-size: 0.8em;
+    color: rgb(219, 216, 216);
+}
+
+.card-cidade {
+    font-size: 1.4em;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #567416, #9ccf2e);
+    padding: 20px 40px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+    color: var(--corSecundaria);
+    font-weight: 600;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#carregando {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(182, 180, 180, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

@@ -1,4 +1,4 @@
-export class Cidade  {
+export class City  {
     constructor(nome, latitude, longitude, qualidadeAr, data) {
         this.nome = nome;
         this.latitude = latitude;

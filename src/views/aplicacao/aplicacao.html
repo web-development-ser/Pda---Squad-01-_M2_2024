@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./aplicacao.css">
     <link rel="stylesheet" href="../style.global.css">
+    <link rel="shortcut icon" href="../../../assets/imagens/icon.png" type="image/png">
     <title>Aplicação</title>
 </head>
 <body>
@@ -17,15 +18,29 @@
         </div>
         <div class="pesquisa">
             <h1>Pesquise a qualidade do ar da sua cidade</h1>
-            <form method="post">
+            <form method="get">
                 <input class="input-cidade" id="icidade" type="text" placeholder="Sua cidade" required minlength="3">
                 <input class="input-enviar" id="isubmit" type="submit" value="Pesquisar">
             </form>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <div id="carregando">
+            <p>Aguarde, carregando...</p>
+        </div>
+    </main>
 
-
+    <footer class="footer">
+        <nav>
+            <ul class="footer-links">
+                <li>Home</li>
+                <li>Como funciona</li>
+                <li>Creditos</li>
+            </ul>
+        </nav>
+    </footer>
     <script type="module" src="./aplicacao.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>
