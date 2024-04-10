@@ -67,7 +67,7 @@ body {
 .main {
     flex: 1;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
