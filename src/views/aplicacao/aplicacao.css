@@ -1,16 +1,29 @@
 /* CSS usado no arquivo de aplicação */
 
 .header {
-    padding: 20px;
+    position: relative;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--corPrincipal);
-    gap: 20px;
+    background: linear-gradient(to right, #567416, #9ccf2e);
+    gap: 40px;
     color: var(--corBranca);
 }
 
+.logo-img {
+    position: absolute;
+    left: 40px;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .input-cidade {
     height: 30px;
     width: 400px;
