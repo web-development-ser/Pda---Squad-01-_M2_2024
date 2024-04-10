@@ -39,3 +39,12 @@
     border-radius: 20px;
     color: white;
 }
+
+#isubmit {
+    cursor: pointer;
+}
+
+#isubmit:hover {
+    background-color: green;
+    transition: .3s;
+}
