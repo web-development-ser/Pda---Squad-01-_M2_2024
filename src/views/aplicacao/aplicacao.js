@@ -123,10 +123,6 @@ function createCard(citySearched) {
 
 }
 
-function showCardCity() {
-
-}
-
 function viewLoading() {
     loading.style.display = 'flex';
 }
