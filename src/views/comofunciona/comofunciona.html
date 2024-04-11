@@ -11,45 +11,64 @@
     />
     <link rel="stylesheet" href="../style.global.css" />
     <link rel="stylesheet" href="comofunciona.css" />
+    <link rel="shortcut icon" href="../../../assets/imagens/icon.png" type="image/png">
     <title>Como funciona</title>
   </head>
   <body>
     <header>
-      <h1>Como Funciona a Aplicação</h1>
+      <div class="logo-img">
+        <img src="../../../assets/imagens/logo.png" alt="Logo" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../aplicacao/aplicacao.html">Aplicação</a></li>
+          <li><a href="../creditos/creditos.html">Creditos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="sobre">
-      <h2>Sobre a Aplicação</h2>
-      <p>
-        A aplicação funciona monitorando os níveis de diferentes poluentes
-        atmosféricos em tempo real e calculando o AQI com base nesses dados. Ela
-        pode acessar informações de estações de monitoramento locais ou de
-        fontes globais para fornecer uma avaliação precisa da qualidade do ar em
-        uma determinada área.
-      </p>
-    </section>
-
-    <section id="funcionalidades">
-      <h2>Funcionalidades</h2>
-      <ul>
-        <li>Monitoramento em tempo real dos níveis de poluentes atmosféricos.</li>
-        <li>Cálculo e exibição do AQI com base nos dados coletados.</li>
-        <li> Informações sobre os diferentes níveis de AQI e seus impactos na saúde.</li> 
-      </ul>
-    </section>
-
-    <section id="como-usar">
-      <h2>Como Usar</h2>
-      <ol>
-        <li>Abra o AQI em seu navegador</li>
-        <li>Insira a sua localização ou região desejada</li>
-        <li> Informações sobre os diferentes níveis de AQI e seus impactos na saúde.</li>
-        <li>Explore as diferentes seções da aplicação para obter mais informações sobre os poluentes, efeitos na saúde e medidas de proteção.</li>
-      </ol>
-    </section>
+    <main class="main">
+      <section id="sobre">
+        <h2>Sobre a Aplicação</h2>
+        <p>
+          A aplicação funciona monitorando os níveis de diferentes poluentes
+          atmosféricos e calculando o AQI com base nesses dados. Ela
+          pode acessar informações de estações de monitoramento locais ou de
+          fontes globais para fornecer uma avaliação precisa da qualidade do ar em
+          uma determinada área.
+          AQI é uma medida padronizada para avaliar a qualidade do ar com base em diferentes poluentes atmosféricos.
+          O <strong>AQI varia de 0 a 500</strong>, e cada faixa de valor está associada a uma classificação de qualidade do ar, indicando quão boa ou ruim é a qualidade do ar. Aqui está uma interpretação geral dos diferentes níveis do AQI:
+        </p>
+        <ul>
+          <li><strong>0 a 50: Boa</strong> - A qualidade do ar é considerada satisfatória, e a poluição do ar representa pouco ou nenhum risco para a saúde.</li>
+          <li><strong>51 a 100: Moderada</strong> - A qualidade do ar é aceitável; no entanto, alguns poluentes podem representar um risco à saúde para grupos sensíveis.</li>
+          <li><strong>101 a 150: Insalubre para grupos sensíveis</strong> - Alguns membros de grupos sensíveis podem experimentar efeitos adversos à saúde. A maioria das pessoas não será afetada.</li>
+          <li><strong>151 a 200: Insalubre</strong> - Todos podem começar a experimentar efeitos adversos à saúde; membros de grupos sensíveis podem experimentar efeitos mais graves.</li>
+          <li><strong>201 a 300: Muito insalubre</strong> - A saúde de todos os grupos populacionais pode ser afetada. Ações de saúde devem ser tomadas para reduzir a exposição à poluição do ar.</li>
+          <li><strong>301 a 500: Perigoso</strong> - A exposição à poluição do ar é muito prejudicial à saúde e pode causar efeitos graves e imediatos em uma grande parte da população.</li>
+        </ul>
+      </section>
+      <section id="funcionalidades">
+        <h2>Funcionalidades</h2>
+        <ul>
+          <li>Monitoramento dos níveis de poluentes atmosféricos.</li>
+          <li>Cálculo e exibição do AQI com base nos dados coletados.</li>
+        </ul>
+      </section>
+      <section id="como-usar">
+        <h2>Como Usar</h2>
+        <ol>
+          <li>Abra o AQI em seu navegador</li>
+          <li>Insira o nome da sua cidade</li>
+          <li>Visualize o indíce AQI da sua cidade</li>
+          <li>Explore as diferentes seções da aplicação para obter mais informações sobre os poluentes, efeitos na saúde e medidas de proteção.</li>
+        </ol>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2024 Ambiente do Solo. Todos os direitos reservados.</p>
+      <p>&copy; 2024 ArClean. Todos os direitos reservados.</p>
     </footer>
   </body>
 </html>
