@@ -1,1 +1,182 @@
-/* CSS usado no arquivo de aplicação */
+body {
+    position: relative;
+    min-height: 100vh;
+}
+.header {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #567416, #9ccf2e);
+    gap: 40px;
+    color: var(--corBranca);
+}
+
+.title {
+    font-size: 1.7em;
+    font-weight: 200;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-city {
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid var(--corSecundaria);
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--corSecundaria);
+}
+
+.input-city::placeholder{
+    color: var(--corSecundaria);
+}
+
+.input-city:focus {
+    outline: none;
+}
+
+.input-send {
+    height: 30px;
+    padding: 5px 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: var(--corSecundaria);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#isubmit {
+    cursor: pointer;
+}
+
+#isubmit:hover {
+    background-color: #313030;
+    transition: .3s;
+}
+
+.main {
+    flex: 1;
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #6e9220;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card-air {
+    width: 100%;
+    /* background-color: red; */
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+}
+
+.card-date {
+    font-size: 0.8em;
+    color: rgb(219, 216, 216);
+}
+
+.card-city {
+    font-size: 1.4em;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #567416, #9ccf2e);
+    padding: 20px 40px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    transition: .3s;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+#loading {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(182, 180, 180, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 970px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input-cidade {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .input-cidade {
+        width: 100%;
+    }
+    .pesquisa-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
