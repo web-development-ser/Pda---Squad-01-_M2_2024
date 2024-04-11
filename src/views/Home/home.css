@@ -1,0 +1,39 @@
+body {
+    font-family: arial;
+    margin: 0;
+    background-color: #84B026;
+  }
+  header {
+    background-image:url(poluição.jpg); 
+    background-size: cover;
+    background-position: 0px,200px;
+    padding: 70px ;
+   
+    
+  }
+  nav {
+    text-align: center;
+    margin-top: 25px;
+    background-image:url(logo.jpeg); 
+    background-repeat: no-repeat;
+    background-position: -10px,100px;
+    padding:60px;
+
+   
+   
+    
+  }
+  nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  nav a:hover {
+    background-color: #777;
+  }
+ div{
+  text-align: center;
+ }
