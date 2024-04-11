@@ -3,7 +3,7 @@ import { addCity, listCity } from "../../controllers/cityController.js";
 const city = document.getElementById('icidade')
 const buttonSubmit = document.getElementById('isubmit')
 const main = document.getElementsByClassName('main')[0]
-const loading = document.getElementById('carregando');
+const loading = document.getElementById('loading');
 
 buttonSubmit.addEventListener('click', async (event) => {
     if(city.value.length>=3 && city.value.trim().length >= 1) {
@@ -14,20 +14,13 @@ buttonSubmit.addEventListener('click', async (event) => {
             const informations = await verifyEnvironment(coordinates.lat, coordinates.lon);
             if(informations) {
                 const arrayCitySearched = listCity();
-                console.log("Array de cidades pesquisadas:", arrayCitySearched);
-                
-                const cityName = city.value;
-                console.log("Nome da cidade a ser pesquisada:", cityName);
-                
                 const list = arrayCitySearched.filter(cityObj => cityObj.name === cityName);
-                console.log("Número de cidades encontradas:", list.length);
                 if(list.length > 0) {
-                    console.log('ja existe')
+                    alert('Você acabou de pesquisar sobre essa cidade.')
                 } else {
-                    const citySearched = addCity(city.value, coordenadas.lat, coordenadas.lon, informations.aqius, informations.ts)
+                    const citySearched = addCity(city.value, coordinates.lat, coordinates.lon, informations.aqius, informations.ts)
                     createCard(citySearched)
                 }
-
             }
         }
     }
@@ -94,10 +87,10 @@ function createCard(citySearched) {
         div.style.backgroundColor = 'lightgreen'
     } else if(citySearched <= 150 ) {
         result.innerHTML = "Insalubre"
-        div.style.backgroundColor = 'lightyellow'
+        div.style.backgroundColor = '#a4ad14'
     } else if(citySearched.airQuality <= 200) {
         result.innerHTML = "Insalubre"
-        div.style.backgroundColor = 'yellow'
+        div.style.backgroundColor = '#7d840f'
     } else if (citySearched.airQuality <= 300) {
         result.innerHTML = "Muito insalubre"
         div.style.backgroundColor = 'lightred'
