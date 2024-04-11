@@ -1,1 +1,157 @@
-/* CSS usado no arquivo de index*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #567416, #9ccf2e);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    transition: .3s;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .container_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #84B026;
+  }
+  
+  .container_top div img {
+    width: 50px;
+    height: auto;
+    border-radius: 14px;
+    margin: 0.9rem 0.9rem;
+  }
+  
+  .container_top img:hover {
+    border-bottom: solid 3px white;
+    transition: 0.7s;
+  }
+  
+  .container_top nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .container_top nav a {
+    border-bottom: solid limegreen 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    margin: 0 0.5rem 0.7rem;
+    color: white;
+  }
+  
+  .container_top nav a:hover {
+    border-color: white;
+    transition: 0.7s;
+  }
+  
+  section {
+    padding: 0.5rem;
+  
+    margin: 0.5rem;
+    border-left: solid 2px silver;
+  }
+  
+  section:last-child {
+    text-align: center;
+  }
+  
+  .imgs img {
+    width: 30%;
+    margin-bottom: 0.3rem;
+    border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #567416;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .text {
+    text-align: justify;
+  }
+  
+  @media screen and (max-width: 768px) {}
+  
+  @media only screen and (max-width: 600px) {
+    section {
+      height: 125vh;
+    }
+  
+    .container_top {
+      flex-direction: column;
+      border-bottom-left-radius: 27px;
+      border-bottom-right-radius: 27px;
+    }
+  
+    .container_top nav {
+      justify-content: center;
+    }
+  
+    .container_center div img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .logo {
+        display: none;
+      }
+      .slide-container{
+        margin-bottom: 40px;
+      }
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  footer p {
+    margin: 0;
+  }

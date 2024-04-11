@@ -121,14 +121,14 @@ body {
     bottom: 0;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left, #567416, #9ccf2e);
+    background: linear-gradient(to right, #567416, #9ccf2e);
     padding: 20px 40px;
 }
 
 .footer-links {
     display: flex;
     gap: 40px;
-    color: var(--corSecundaria);
+    color: white;
     font-weight: 600;
 }
 
@@ -144,7 +144,7 @@ li:hover {
 
 a {
     text-decoration: none;
-    color: var(--corSecundaria);
+    color: white;
 }
 #loading {
     display: none; 
