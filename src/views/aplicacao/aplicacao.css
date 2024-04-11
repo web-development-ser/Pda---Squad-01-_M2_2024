@@ -14,19 +14,20 @@ body {
     color: var(--corBranca);
 }
 
-.titulo {
+.title {
     font-size: 1.7em;
     font-weight: 200;
 }
 
-.pesquisa {
+.search {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.input-cidade {
+
+.input-city {
     height: 30px;
     width: 400px;
     padding: 10px;
@@ -36,15 +37,15 @@ body {
     color: var(--corSecundaria);
 }
 
-.input-cidade::placeholder{
+.input-city::placeholder{
     color: var(--corSecundaria);
 }
 
-.input-cidade:focus {
+.input-city:focus {
     outline: none;
 }
 
-.input-enviar {
+.input-send {
     height: 30px;
     padding: 5px 10px;
     font-family: 'Inter', sans-serif;
@@ -66,8 +67,7 @@ body {
 
 .main {
     flex: 1;
-    height: 100%;
-    /* background-color: red; */
+    height: 70vh;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +90,7 @@ body {
     padding: 20px;
 }
 
-.card-ar {
+.card-air {
     width: 100%;
     /* background-color: red; */
     height: 80px;
@@ -101,12 +101,12 @@ body {
     font-size: 2.5em;
 }
 
-.card-data {
+.card-date {
     font-size: 0.8em;
     color: rgb(219, 216, 216);
 }
 
-.card-cidade {
+.card-city {
     font-size: 1.4em;
 }
 
@@ -116,7 +116,7 @@ body {
     gap: 3px;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     display: flex;
@@ -142,7 +142,11 @@ li:hover {
     cursor: pointer;
 }
 
-#carregando {
+a {
+    text-decoration: none;
+    color: var(--corSecundaria);
+}
+#loading {
     display: none; 
     position: fixed;
     top: 50%;
@@ -152,4 +156,27 @@ li:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 970px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input-cidade {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .input-cidade {
+        width: 100%;
+    }
+    .pesquisa-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 }

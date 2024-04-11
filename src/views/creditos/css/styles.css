@@ -1,12 +1,6 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
 body {
   min-height: 100vh;
   align-items: center;
@@ -30,6 +24,11 @@ nav ul {
   padding: 0;
 }
 
+a:hover {
+  text-decoration: underline;
+  transition: .3s;
+}
+
 nav ul li {
   display: inline;
   margin: 0 10px;
@@ -39,7 +38,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
 
 #about {
   width: 100%;
@@ -60,10 +58,12 @@ nav ul li a {
   overflow: hidden;
   border-radius: 25px;
 }
+
 .card {
   border-radius: 25px;
   background-color: #fff;
 }
+
 .image-content,
 .card-content {
   display: flex;
@@ -71,11 +71,13 @@ nav ul li a {
   align-items: center;
   padding: 10px 14px;
 }
+
 .image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
 }
+
 .overlay {
   position: absolute;
   left: 0;
@@ -85,6 +87,7 @@ nav ul li a {
   background-color: #84B026;
   border-radius: 25px 25px 0 25px;
 }
+
 .overlay::before,
 .overlay::after {
   content: "";
@@ -95,10 +98,12 @@ nav ul li a {
   width: 40px;
   background-color: #84B026;
 }
+
 .overlay::after {
   border-radius: 0 25px 0 0;
   background-color: #fff;
 }
+
 .card-image {
   position: relative;
   height: 150px;
@@ -107,6 +112,7 @@ nav ul li a {
   background: #fff;
   padding: 3px;
 }
+
 .card-image .card-img {
   height: 100%;
   width: 100%;
@@ -114,16 +120,19 @@ nav ul li a {
   border-radius: 50%;
   border: 4px solid #3D3D3D;
 }
+
 .name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
+
 .description {
   font-size: 14px;
   color: #707070;
   text-align: center;
 }
+
 .button {
   border: none;
   font-size: 16px;
@@ -135,6 +144,7 @@ nav ul li a {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .button:hover {
   background: #1a1919;
 }
@@ -143,28 +153,32 @@ nav ul li a {
   color: #3D3D3D;
   transition: color 0.3s ease;
 }
+
 .swiper-navBtn:hover {
   color: #131111;
 }
+
 .swiper-navBtn::before,
 .swiper-navBtn::after {
   font-size: 35px;
 }
+
 .swiper-button-next {
   right: 0;
 }
+
 .swiper-button-prev {
   left: 0;
 }
+
 .swiper-pagination-bullet {
   background-color: #6e93f7;
   opacity: 1;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
-
-/* Responsividade dos slides */
 
 @media screen and (max-width: 768px) {
   .slide-content {
@@ -175,8 +189,6 @@ nav ul li a {
   }
 }
 
-
-
 @media only screen and (max-width: 600px) {
 
   .logo {
@@ -186,7 +198,6 @@ nav ul li a {
     margin-bottom: 40px;
   }
 }
-
 
 footer {
   background-color: #333;

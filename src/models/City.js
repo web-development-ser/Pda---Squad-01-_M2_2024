@@ -1,9 +1,9 @@
 export class City  {
-    constructor(nome, latitude, longitude, qualidadeAr, data) {
-        this.nome = nome;
+    constructor(name, latitude, longitude, airQuality, date) {
+        this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.qualidadeAr = qualidadeAr;
-        this.data = data;
+        this.airQuality = airQuality;
+        this.date = date;
     }
 }
